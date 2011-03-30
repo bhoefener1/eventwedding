@@ -1,0 +1,803 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<title>Wedding Booking</title>
+</head>
+
+<body stylesrc="../images/_private/style.htm" background="../tidbkgde.jpg">
+
+<p><font size="5" face="Book Antiqua"><b>
+<img src="../images/Image3.gif" align="left" hspace="12" width="209" height="125"></b></font>
+</p>
+<!--webbot bot="Include" tag="BODY" u-include="../images/_private/navbar.htm" startspan -->
+
+<p><a href="../Index.htm"><img alt="[Home]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bhome.gif" width="59" height="15"></a><a href="What's%20New.htm"><img alt="[What's New]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bnews.gif" width="58" height="15"></a><a href="products.htm"><img alt="[Products &amp; Services]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bprdsrv.gif" width="110" height="15"></a><a href="Feedback%20Form.htm"><img alt="[Feedback]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bfeed.gif" width="57" height="15"></a> </p>
+<!--webbot bot="Include" endspan i-checksum="38583" -->
+
+
+<p>&nbsp;</p>
+
+<p align="center"><font size="5" face="Tahoma"><em>Photographic Excellence Since 1966</em></font></p>
+
+<p align="center"><img src="images/div.gif" alt="[Dividing Line Image]" width="471" height="6"></p>
+
+<p align="center"><font face="Book Antiqua"><strong><big><big>Please Reserve The
+Date For Our Wedding.<br>
+</big></big><font color="#0000FF">Note: Because we may already be booked for
+your date and time,<br>
+&nbsp;a reservation is not confirmed until accepted in writing by White's
+Photography.<br>
+No date is confirmed until the required deposit has been paid.<br>
+We will call you QUICKLY to confirm your date!</font></strong></font></p>
+
+<p align="center"><strong><font face="Book Antiqua"><big><big><big>Wedding
+Reservation</big></big></big></font></strong></p>
+
+<!--webbot BOT="GeneratedScript" PREVIEW=" " startspan --><script Language="JavaScript" Type="text/javascript"><!--
+function FrontPage_Form1_Validator(theForm)
+{
+
+  var checkOK = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzƒŠŒŽšœžŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ- \t\r\n\f";
+  var checkStr = theForm.BridesName.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only letter, whitespace and \"-\" characters in the \"First Name\" field.");
+    theForm.BridesName.focus();
+    return (false);
+  }
+
+  var checkOK = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzƒŠŒŽšœžŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ- \t\r\n\f";
+  var checkStr = theForm.GroomsName.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only letter, whitespace and \"-\" characters in the \"Last Name\" field.");
+    theForm.GroomsName.focus();
+    return (false);
+  }
+
+  if (theForm.BridesAC.value == "")
+  {
+    alert("Please enter a value for the \"BridesAC\" field.");
+    theForm.BridesAC.focus();
+    return (false);
+  }
+
+  if (theForm.BridesAC.value.length < 3)
+  {
+    alert("Please enter at least 3 characters in the \"BridesAC\" field.");
+    theForm.BridesAC.focus();
+    return (false);
+  }
+
+  if (theForm.BridesAC.value.length > 3)
+  {
+    alert("Please enter at most 3 characters in the \"BridesAC\" field.");
+    theForm.BridesAC.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.BridesAC.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"BridesAC\" field.");
+    theForm.BridesAC.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789--";
+  var checkStr = theForm.BridesPhone.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit and \"-\" characters in the \"BridesPhone\" field.");
+    theForm.BridesPhone.focus();
+    return (false);
+  }
+
+  if (theForm.BrideState.value == "")
+  {
+    alert("Please enter a value for the \"BrideState\" field.");
+    theForm.BrideState.focus();
+    return (false);
+  }
+
+  if (theForm.BrideState.value.length < 2)
+  {
+    alert("Please enter at least 2 characters in the \"BrideState\" field.");
+    theForm.BrideState.focus();
+    return (false);
+  }
+
+  if (theForm.BrideState.value.length > 2)
+  {
+    alert("Please enter at most 2 characters in the \"BrideState\" field.");
+    theForm.BrideState.focus();
+    return (false);
+  }
+
+  var checkOK = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzƒŠŒŽšœžŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ";
+  var checkStr = theForm.BrideState.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only letter characters in the \"BrideState\" field.");
+    theForm.BrideState.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789--";
+  var checkStr = theForm.BridesZip.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit and \"-\" characters in the \"BridesZip\" field.");
+    theForm.BridesZip.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.GroomAC.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"GroomAC\" field.");
+    theForm.GroomAC.focus();
+    return (false);
+  }
+
+  if (theForm.GroomPhone.value == "")
+  {
+    alert("Please enter a value for the \"GroomPhone\" field.");
+    theForm.GroomPhone.focus();
+    return (false);
+  }
+
+  if (theForm.GroomPhone.value.length < 7)
+  {
+    alert("Please enter at least 7 characters in the \"GroomPhone\" field.");
+    theForm.GroomPhone.focus();
+    return (false);
+  }
+
+  if (theForm.GroomPhone.value.length > 8)
+  {
+    alert("Please enter at most 8 characters in the \"GroomPhone\" field.");
+    theForm.GroomPhone.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789--";
+  var checkStr = theForm.GroomPhone.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit and \"-\" characters in the \"GroomPhone\" field.");
+    theForm.GroomPhone.focus();
+    return (false);
+  }
+
+  if (theForm.GroomState.value == "")
+  {
+    alert("Please enter a value for the \"GroomState\" field.");
+    theForm.GroomState.focus();
+    return (false);
+  }
+
+  if (theForm.GroomState.value.length < 2)
+  {
+    alert("Please enter at least 2 characters in the \"GroomState\" field.");
+    theForm.GroomState.focus();
+    return (false);
+  }
+
+  if (theForm.GroomState.value.length > 2)
+  {
+    alert("Please enter at most 2 characters in the \"GroomState\" field.");
+    theForm.GroomState.focus();
+    return (false);
+  }
+
+  var checkOK = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzƒŠŒŽšœžŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ";
+  var checkStr = theForm.GroomState.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only letter characters in the \"GroomState\" field.");
+    theForm.GroomState.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789--";
+  var checkStr = theForm.GroomZip.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit and \"-\" characters in the \"GroomZip\" field.");
+    theForm.GroomZip.focus();
+    return (false);
+  }
+
+  if (theForm.CeremonyState.value == "")
+  {
+    alert("Please enter a value for the \"CeremonyState\" field.");
+    theForm.CeremonyState.focus();
+    return (false);
+  }
+
+  if (theForm.CeremonyState.value.length < 2)
+  {
+    alert("Please enter at least 2 characters in the \"CeremonyState\" field.");
+    theForm.CeremonyState.focus();
+    return (false);
+  }
+
+  if (theForm.CeremonyState.value.length > 2)
+  {
+    alert("Please enter at most 2 characters in the \"CeremonyState\" field.");
+    theForm.CeremonyState.focus();
+    return (false);
+  }
+
+  var checkOK = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyzƒŠŒŽšœžŸÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûüýþÿ";
+  var checkStr = theForm.CeremonyState.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only letter characters in the \"CeremonyState\" field.");
+    theForm.CeremonyState.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789--";
+  var checkStr = theForm.CeremonyZip.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit and \"-\" characters in the \"CeremonyZip\" field.");
+    theForm.CeremonyZip.focus();
+    return (false);
+  }
+
+  if (theForm.Payment.selectedIndex < 0)
+  {
+    alert("Please select one of the \"Payment Method\" options.");
+    theForm.Payment.focus();
+    return (false);
+  }
+
+  if (theForm.Payment.selectedIndex == 0)
+  {
+    alert("The first \"Payment Method\" option is not a valid selection.  Please choose one of the other options.");
+    theForm.Payment.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum1.value == "")
+  {
+    alert("Please enter a value for the \"CreditCardNum1\" field.");
+    theForm.CreditCardNum1.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum1.value.length < 4)
+  {
+    alert("Please enter at least 4 characters in the \"CreditCardNum1\" field.");
+    theForm.CreditCardNum1.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum1.value.length > 4)
+  {
+    alert("Please enter at most 4 characters in the \"CreditCardNum1\" field.");
+    theForm.CreditCardNum1.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.CreditCardNum1.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"CreditCardNum1\" field.");
+    theForm.CreditCardNum1.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum2.value == "")
+  {
+    alert("Please enter a value for the \"CreditCardNum2\" field.");
+    theForm.CreditCardNum2.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum2.value.length < 4)
+  {
+    alert("Please enter at least 4 characters in the \"CreditCardNum2\" field.");
+    theForm.CreditCardNum2.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum2.value.length > 4)
+  {
+    alert("Please enter at most 4 characters in the \"CreditCardNum2\" field.");
+    theForm.CreditCardNum2.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.CreditCardNum2.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"CreditCardNum2\" field.");
+    theForm.CreditCardNum2.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum3.value == "")
+  {
+    alert("Please enter a value for the \"CreditCardNum3\" field.");
+    theForm.CreditCardNum3.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum3.value.length < 4)
+  {
+    alert("Please enter at least 4 characters in the \"CreditCardNum3\" field.");
+    theForm.CreditCardNum3.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum3.value.length > 4)
+  {
+    alert("Please enter at most 4 characters in the \"CreditCardNum3\" field.");
+    theForm.CreditCardNum3.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.CreditCardNum3.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"CreditCardNum3\" field.");
+    theForm.CreditCardNum3.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum4.value == "")
+  {
+    alert("Please enter a value for the \"CreditCardNum4\" field.");
+    theForm.CreditCardNum4.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum4.value.length < 4)
+  {
+    alert("Please enter at least 4 characters in the \"CreditCardNum4\" field.");
+    theForm.CreditCardNum4.focus();
+    return (false);
+  }
+
+  if (theForm.CreditCardNum4.value.length > 4)
+  {
+    alert("Please enter at most 4 characters in the \"CreditCardNum4\" field.");
+    theForm.CreditCardNum4.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789-,";
+  var checkStr = theForm.CreditCardNum4.value;
+  var allValid = true;
+  var validGroups = true;
+  var decPoints = 0;
+  var allNum = "";
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+    if (ch != ",")
+      allNum += ch;
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit characters in the \"CreditCardNum4\" field.");
+    theForm.CreditCardNum4.focus();
+    return (false);
+  }
+
+  if (theForm.CardholderState.value == "")
+  {
+    alert("Please enter a value for the \"CardholderState\" field.");
+    theForm.CardholderState.focus();
+    return (false);
+  }
+
+  if (theForm.CardholderState.value.length < 2)
+  {
+    alert("Please enter at least 2 characters in the \"CardholderState\" field.");
+    theForm.CardholderState.focus();
+    return (false);
+  }
+
+  if (theForm.CardholderState.value.length > 2)
+  {
+    alert("Please enter at most 2 characters in the \"CardholderState\" field.");
+    theForm.CardholderState.focus();
+    return (false);
+  }
+
+  var checkOK = "0123456789--";
+  var checkStr = theForm.CardholderZip.value;
+  var allValid = true;
+  var validGroups = true;
+  for (i = 0;  i < checkStr.length;  i++)
+  {
+    ch = checkStr.charAt(i);
+    for (j = 0;  j < checkOK.length;  j++)
+      if (ch == checkOK.charAt(j))
+        break;
+    if (j == checkOK.length)
+    {
+      allValid = false;
+      break;
+    }
+  }
+  if (!allValid)
+  {
+    alert("Please enter only digit and \"-\" characters in the \"CardholderZip\" field.");
+    theForm.CardholderZip.focus();
+    return (false);
+  }
+  return (true);
+}
+//--></script><!--webbot BOT="GeneratedScript" endspan --><form method="POST" action="../_vti_bin/shtml.exe/whitesphotography/Wedding%20Booking.htm" onsubmit="return FrontPage_Form1_Validator(this)" name="FrontPage_Form1" webbot-action="--WEBBOT-SELF--" language="JavaScript">
+  <!--webbot bot="SaveResults" u-file="../_private/form_results.txt" s-format="TEXT/CSV" s-label-fields="TRUE" b-reverse-chronology="FALSE" s-email-format="TEXT/PRE" s-email-address="pawhite@camalott.com" b-email-label-fields="TRUE" b-email-replyto-from-field="TRUE" s-email-replyto="email address" b-email-subject-from-field="FALSE" s-email-subject="Wedding BOOKING" s-builtin-fields="REMOTE_NAME REMOTE_USER HTTP_USER_AGENT" startspan --><input TYPE="hidden" NAME="VTI-GROUP" VALUE="0"><!--webbot bot="SaveResults" endspan i-checksum="43374" --><p><font face="Book Antiqua"><strong>Bride's
+  Name </strong></font>
+  <!--webbot bot="Validation" s-display-name="First Name" s-data-type="String" b-allow-letters="TRUE" b-allow-whitespace="TRUE" s-allow-other-chars="-" --><input type="text" name="BridesName" size="40"> <font face="Book Antiqua"><strong>Groom's
+  Name</strong></font>
+  <!--webbot bot="Validation" s-display-name="Last Name" s-data-type="String" b-allow-letters="TRUE" b-allow-whitespace="TRUE" s-allow-other-chars="-" --><input type="text" name="GroomsName" size="40"></p>
+  <p><font face="Book Antiqua"><strong>Bride's Address</strong></font><input type="text" name="BridesAddress" size="50">&nbsp;
+  <b>Bride's Phone
+  <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="," b-value-required="TRUE" i-minimum-length="3" i-maximum-length="3" --><input type="text" name="BridesAC" size="3" maxlength="3"><!--webbot bot="Validation" s-data-type="String" b-allow-digits="TRUE" s-allow-other-chars="-" --><input type="text" name="BridesPhone" size="8"></b></p>
+  <p><font face="Book Antiqua"><strong>Bride's City</strong></font><input type="text" name="BridesCity" size="30">
+  <b>Bride's State </b>
+  <!--webbot bot="Validation" s-data-type="String" b-allow-letters="TRUE" b-value-required="TRUE" i-minimum-length="2" i-maximum-length="2" --><input type="text" name="BrideState" size="2" maxlength="2">&nbsp;
+  <b>Bride's Zip Code </b>
+  <!--webbot bot="Validation" s-data-type="String" b-allow-digits="TRUE" s-allow-other-chars="-" --><input type="text" name="BridesZip" size="10"></p>
+  <p><b>Bride's Email Address <input type="text" name="BridesEmail" size="40"></b></p>
+  <p><font face="Book Antiqua"><strong>Groom's Address</strong></font> <input type="text" name="GroomsAddress" size="50">
+  <b>Groom's Phone
+  <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="," --><input type="text" name="GroomAC" size="3"><!--webbot bot="Validation" s-data-type="String" b-allow-digits="TRUE" s-allow-other-chars="-" b-value-required="TRUE" i-minimum-length="7" i-maximum-length="8" --><input type="text" name="GroomPhone" size="8" maxlength="8"></b></p>
+  <p><font face="Book Antiqua"><strong>Groom's City</strong></font><input type="text" name="GroomCity" size="30">
+  <b>Groom's State </b>
+  <!--webbot bot="Validation" s-data-type="String" b-allow-letters="TRUE" b-value-required="TRUE" i-minimum-length="2" i-maximum-length="2" --><input type="text" name="GroomState" size="2" maxlength="2">&nbsp;
+  <b>Groom's Zip Code </b>
+  <!--webbot bot="Validation" s-data-type="String" b-allow-digits="TRUE" s-allow-other-chars="-" --><input type="text" name="GroomZip" size="10"></p>
+  <p><b>Groom's Email Address <input type="text" name="GroomsEmail" size="40"></b></p>
+  <p><b>Date of Wedding</b> <input type="text" name="WeddingDate" size="24">  <b>Time
+  of Wedding</b> <input type="text" name="CeremonyTime" size="20"> </p>
+  <p><b>Wedding</b> <b>Location </b><input type="text" name="WeddingLocation" size="60"> </p>
+  <p><b>Address of Wedding <input type="text" name="CeremonyAddress" size="60"></b> </p>
+  <p><b>&nbsp;City</b><input type="text" name="CeremonyCity" size="30"> <b>State
+  </b>
+  <!--webbot bot="Validation" s-data-type="String" b-allow-letters="TRUE" b-value-required="TRUE" i-minimum-length="2" i-maximum-length="2" --><input type="text" name="CeremonyState" size="2" maxlength="2"><b>&nbsp;
+  Zip Code</b>
+  <!--webbot bot="Validation" s-data-type="String" b-allow-digits="TRUE" s-allow-other-chars="-" --><input type="text" name="CeremonyZip" size="10"> </p>
+  <p><b>Which Wedding Package Do You Want?&nbsp;</b> <input type="text" name="WedPkg" size="60"> </p>
+  <p><b>Price of Wedding Package, as listed on web site $<input type="text" name="WedPkgPrice" size="9">&nbsp;&nbsp;
+  Deposit Required (1/4 of package price.) <input type="text" name="WedPkgDeposit" size="9"></b> </p>
+  <p><b>&nbsp;<!--webbot bot="Validation" s-display-name="Payment Method" b-value-required="TRUE" b-disallow-first-item="TRUE" --><select size="1" name="Payment">
+    <option selected>Please Select Method of Deposit Payment</option>
+    <option>Will mail check</option>
+    <option>Will call with credit card number</option>
+    <option>Visa (Enter number below.)</option>
+    <option>MasterCard (Enter number below.)</option>
+    <option>Discover (Enter number below.)</option>
+  </select></b></p>
+  <p><b>If using a credit card, enter the information below, or you may call it
+  in, if you prefer.</b></p>
+  <p><b>Card Number
+  <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="," b-value-required="TRUE" i-minimum-length="4" i-maximum-length="4" --><input type="text" name="CreditCardNum1" size="4" maxlength="4">
+  <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="," b-value-required="TRUE" i-minimum-length="4" i-maximum-length="4" --><input type="text" name="CreditCardNum2" size="4" maxlength="4">
+  <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="," b-value-required="TRUE" i-minimum-length="4" i-maximum-length="4" --><input type="text" name="CreditCardNum3" size="4" maxlength="4">
+  <!--webbot bot="Validation" s-data-type="Integer" s-number-separators="," b-value-required="TRUE" i-minimum-length="4" i-maximum-length="4" --><input type="text" name="CreditCardNum4" size="4" maxlength="4">&nbsp;&nbsp;&nbsp;
+  Expiration Date <input type="text" name="CardExpiry" size="20"><br>
+  Name on Card </b><input type="text" name="CardholderName" size="50"><br>
+  <b>Address where bill is received</b> <b><input type="text" name="CardholderAddress" size="60"></b><font face="Book Antiqua"><strong><br>
+  City </strong></font><input type="text" name="CardholderCity" size="30"> <b>State
+  </b>
+  <!--webbot bot="Validation" b-value-required="TRUE" i-minimum-length="2" i-maximum-length="2" --><input type="text" name="CardholderState" size="2" maxlength="2">
+  <b>Zip Code </b>
+  <!--webbot bot="Validation" s-data-type="String" b-allow-digits="TRUE" s-allow-other-chars="-" --><input type="text" name="CardholderZip" size="10"></p>
+  <p>&nbsp;</p>
+
+<p align="center"><img src="images/div.gif" alt="[Dividing Line Image]" width="471" height="6"></p>
+
+  <p class="MsoNormal" align="center" style="text-align:center"><b style="mso-bidi-font-weight:
+normal"><span style="font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:
+&quot;Times New Roman&quot;"><big><big><big>Terms</big></big></big></span></b></p>
+  <p class="MsoNormal" align="center" style="text-align:center"><font face="Book Antiqua"><strong><font color="#0000FF">Note:
+  Because we may already be booked for your date and time,<br>
+  &nbsp;a reservation is not confirmed until accepted in writing by White's
+  Photography.<br>
+  No date is confirmed until the required deposit has been paid.</font></strong></font><b style="mso-bidi-font-weight:
+normal"><span style="font-size:8.0pt;mso-bidi-font-size:10.0pt;font-family:
+&quot;Times New Roman&quot;"><o:p>
+  </o:p>
+  </span></b></p>
+  <p class="MsoBodyText2"><b>Together with their current wedding price brochure
+  containing package descriptions and deposit and payment requirements which are
+  hereby incorporated into this contract, copies of which I acknowledge
+  receiving, this contract contains the entire agreement between me and
+  White&#146;s Photography.<span style="mso-spacerun: yes">&nbsp; </span>No date is
+  promised without payment of required deposit indicated above. Since White&#146;s
+  may have turned down other weddings, a cancellation fee equal to the required
+  deposit amount will apply.<span style="mso-spacerun: yes">&nbsp; </span>This
+  contract and any monies paid are not transferable.<span style="mso-spacerun: yes">&nbsp;
+  </span>White&#146;s Photography&#146;s liability is limited to the refund of any
+  monies paid.<span style="mso-spacerun: yes">&nbsp; </span>In case of illness
+  or other events beyond their control White&#146;s may substitute another
+  qualified photographer.<span style="mso-spacerun: yes">&nbsp; </span>Permission
+  is granted for White&#146;s Photography to use images made under this contract
+  for display and general advertising purposes. Shooting time included in
+  packages runs continuously from time photographer arrives on site.<span style="mso-spacerun: yes">&nbsp;
+  </span>I am at least 18 years of age and have read and received a copy of this
+  contract.<o:p>
+  </o:p>
+  </o:p>
+  </b></p>
+  <p><b>THANK YOU FOR CHOOSING US!</b>&nbsp; <b>We will call or email you to
+  confirm booking. After acceptance of reservation we will mail you a printed
+  copy of the contract for your signature.</b></p>
+
+<p align="center"><img src="images/div.gif" alt="[Dividing Line Image]" width="471" height="6"></p>
+
+  <p><input type="submit" value="Submit" name="B1"><input type="reset" value="Reset" name="B2"></p>
+  <p>&nbsp;</p>
+</form>
+
+<p align="center"><img src="images/div.gif" alt="[Dividing Line Image]" width="471" height="6"> </p>
+
+<p align="center">&nbsp;</p>
+<!--webbot bot="Include" tag="BODY" u-include="../images/_private/navbar.htm" startspan -->
+
+<p><a href="../Index.htm"><img alt="[Home]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bhome.gif" width="59" height="15"></a><a href="What's%20New.htm"><img alt="[What's New]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bnews.gif" width="58" height="15"></a><a href="products.htm"><img alt="[Products &amp; Services]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bprdsrv.gif" width="110" height="15"></a><a href="Feedback%20Form.htm"><img alt="[Feedback]" border="0" src="http://www.whitesphotography.com/whitesphotography/images/bfeed.gif" width="57" height="15"></a> </p>
+<!--webbot bot="Include" endspan i-checksum="38583" -->
+
+
+<h5>Copyright © 1997 
+<!--webbot bot="Substitution" s-variable="White's Photography" startspan --><strong>White's Photography</strong><!--webbot bot="Substitution" endspan i-checksum="27332" --><br>
+Last modified: 
+<!--webbot bot="TimeStamp" s-type="EDITED" s-format="%B %d, %Y" startspan -->May 17, 2007<!--webbot bot="TimeStamp" endspan i-checksum="11245" --> </h5>
+</body>
+</html>
