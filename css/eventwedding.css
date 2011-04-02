@@ -2,7 +2,8 @@ h1 { color: #8A0808; }
 h3 { color: green; }
 p + p { text-indent: 0; }
 div.container {background-color: black; }
-body { background: black url(../images/twentyfourcolbg.gif) repeat-y 50% 0; }
+/* body { background: black url(../images/twentyfourcolbg.gif) repeat-y 50% 0; } */
+body { background: black; }
 img.frame {
   border: 2px solid black;
   margin: 5px 5px 5px 5px;
