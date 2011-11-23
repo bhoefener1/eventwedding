@@ -1,0 +1,14 @@
+h1 { color: green; }
+h3 { color: green; }
+p + p { text-indent: 0; }
+div.container {background-color: #fcfcfc; }
+body { background: black url(../images/twentyfourcolbg.gif) repeat-y 50% 0; }
+img.frame {
+  border: 2px solid black;
+  margin: 5px 5px 5px 5px;
+}
+a { color: gray; }
+html {
+  margin-left: -1px;
+  overflow-y: scroll;
+}
